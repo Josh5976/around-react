@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/%7Brepo-name%7D/static/css/main.0868661f.css",
+    "main.js": "/%7Brepo-name%7D/static/js/main.90e45339.js",
+    "static/js/787.1c78f32b.chunk.js": "/%7Brepo-name%7D/static/js/787.1c78f32b.chunk.js",
+    "static/media/Inter-Medium.woff?v=3.19": "/%7Brepo-name%7D/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff?v=3.19": "/%7Brepo-name%7D/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff?v=3.19": "/%7Brepo-name%7D/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2?v=3.19": "/%7Brepo-name%7D/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2?v=3.19": "/%7Brepo-name%7D/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2?v=3.19": "/%7Brepo-name%7D/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/header_vector.svg": "/%7Brepo-name%7D/static/media/header_vector.1ddb2bdc2582ce46650a16f0f59c5001.svg",
+    "static/media/like_icon.svg": "/%7Brepo-name%7D/static/media/like_icon.3826c074a1b94b101e38.svg",
+    "index.html": "/%7Brepo-name%7D/index.html",
+    "static/media/trash_button.svg": "/%7Brepo-name%7D/static/media/trash_button.8cb59aa98088a1653f62.svg",
+    "static/media/active_like.svg": "/%7Brepo-name%7D/static/media/active_like.226461bd64622361ffb2.svg",
+    "static/media/close_icon.svg": "/%7Brepo-name%7D/static/media/close_icon.910c81e7387e24f6f846.svg",
+    "static/media/edit_profile.svg": "/%7Brepo-name%7D/static/media/edit_profile.8667ac4a523e8fc42e59.svg",
+    "static/media/edit_profile_image.svg": "/%7Brepo-name%7D/static/media/edit_profile_image.a086f758840ae814ecdece4799d2cf40.svg",
+    "static/media/add_button.svg": "/%7Brepo-name%7D/static/media/add_button.d86bb2edc2f6eadb96b7.svg",
+    "main.0868661f.css.map": "/%7Brepo-name%7D/static/css/main.0868661f.css.map",
+    "main.90e45339.js.map": "/%7Brepo-name%7D/static/js/main.90e45339.js.map",
+    "787.1c78f32b.chunk.js.map": "/%7Brepo-name%7D/static/js/787.1c78f32b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0868661f.css",
+    "static/js/main.90e45339.js"
+  ]
+}
