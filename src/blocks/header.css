@@ -1,0 +1,22 @@
+.header {
+    max-width: 880px;
+    margin: 0 auto;
+    padding-top: 74px;
+    border-bottom: 1px rgba(84, 84, 84, .7) solid;
+}
+
+.header__image {
+    padding-bottom: 41px;
+}
+
+@media screen and (max-width: 565px) {
+    .header__image {
+        padding-left: 27px;
+        max-width: 126px;
+        padding-bottom: 32px;
+    }
+
+    .header {
+        padding-top: 28px;
+    }
+}
