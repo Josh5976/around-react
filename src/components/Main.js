@@ -1,5 +1,4 @@
 import React from 'react';
-// import api from "../utils.api";
 import Card from "./Card";
 import editAvatarButton from '../images/edit_profile_image.svg';
 import {api} from '../utils/api';
