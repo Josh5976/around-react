@@ -13,19 +13,27 @@ function Main({
 }) {
     const [userName, setUserName] = React.useState("");
     const [userDesciption, setUserDesciption] = React.useState("");
-    const [userAvatar, setUserAvatar] = React.useState();
+    const [userAvatar, setUserAvatar] = React.useState("");
     const [cards, setCards] = React.useState([]);
 
     React.useEffect(() => {
-        api.getUser().then((userData) =>{
+        api.getUser()
+        .then((userData) =>{
             setUserName(userData.name);
             setUserDesciption(userData.about);
             setUserAvatar(userData.avatar);
-        });
+        })
+        .catch((err) => {
+            console.log(err);
+        })
 
-        api.getInitialCards().then((cardData) => {
+        api.getInitialCards()
+        .then((cardData) => {
             setCards(cardData);
-        });
+        })
+        .catch((err) => {
+            console.log(err);
+        })
     }, []);
 
     const imageStyle = {backgroundImage: `url(${userAvatar})`};

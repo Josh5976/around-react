@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+Around-React
+
+Around-React is a react clone of my last project, web_project_4. The same features are/will be available such as posting new places, changing profile name and avatar, as well as liking these places.
+
+This site is built with Create React App and includes OOP.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -4,10 +4,6 @@ class Api {
         this._headers = headers;        
     }
 
-    _handleErrorResponse(err) {
-        console.log(err);
-    }
-
     _handleResponse(res) {
         if (res.ok) {
             return res.json();
@@ -25,7 +21,6 @@ class Api {
             headers: this._headers,
         })
         .then(this._handleResponse)
-        .catch(this._handleErrorResponse)
     }
 
     changeUser({userName, userOccupation}) {
@@ -38,7 +33,6 @@ class Api {
             })
         })
         .then(this._handleResponse)
-        .catch(this._handleErrorResponse)
     }
 
     changeAvatar({ avatar }) {
@@ -50,7 +44,6 @@ class Api {
             })
         })
         .then(this._handleResponse)
-        .catch(this._handleErrorResponse)
     }
 
     getInitialCards() {
@@ -59,7 +52,6 @@ class Api {
             method: "GET"
         })
         .then(this._handleResponse)
-        .catch(this._handleErrorResponse)
     }
 
     addCard(data) {
@@ -69,7 +61,6 @@ class Api {
             body: JSON.stringify(data),
         })
         .then(this._handleResponse)
-        .catch(this._handleErrorResponse)
     }
 
     deleteCard(id) {
@@ -78,7 +69,6 @@ class Api {
             method: "DELETE"
         })
         .then(this._handleResponse)
-        .catch(this._handleErrorResponse)
     }
 
     addLike(id) {
@@ -87,8 +77,6 @@ class Api {
             method: "PUT"
         })
         .then(this._handleResponse)
-        .catch(this._handleErrorResponse)
-        
     }
 
     deleteLike(id) {
@@ -97,7 +85,6 @@ class Api {
             method: "DELETE"
         })
         .then(this._handleResponse)
-        .catch(this._handleErrorResponse)
     }
 
 }

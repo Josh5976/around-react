@@ -12,7 +12,7 @@ function App() {
     const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
     const [isEditAvatarPopupOpen, setIsAvatarPopupOpen] = React.useState(false);
     const [isConfirmDeletePopupOpen, setIsConfirmDeletePopupOpen] = React.useState(false);
-    const [selectedCard, setSelectedCard] = React.useState(undefined);
+    const [selectedCard, setSelectedCard] = React.useState(null);
 
     function handleEditProfileClick() {
         setIsEditProfilePopupOpen(true);
@@ -35,19 +35,19 @@ function App() {
         setIsAddPlacePopupOpen(false);
         setIsAvatarPopupOpen(false);
         setIsConfirmDeletePopupOpen(false);
-        setSelectedCard(undefined);
+        setSelectedCard(null);
     }
 
     return (
         <div className="page">
-            <Header />;
+            <Header />
             <Main
             onEditProfileClick={handleEditProfileClick}
             onAddPlaceClick={handleAddPlaceClick}
             onEditAvatarClick={handleEditAvatarClick}
             onDeleteCardClick={() => {setIsConfirmDeletePopupOpen(true)}}
-            onCardImageClick ={handleCardClick}/>;
-            <Footer />;
+            onCardImageClick ={handleCardClick}/>
+            <Footer />
 
             <PopupWithForm
                 title="Edit profile"
