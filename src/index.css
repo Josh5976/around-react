@@ -8,3 +8,7 @@
 @import "./blocks/footer.css";
 @import "./blocks/popup.css";
 @import "./blocks/form.css";
+
+
+/* Didnt know if this has to be in src/pages which is originally was,
+but was unable to submit with it being there, so it is now directly in src */
