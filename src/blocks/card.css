@@ -28,6 +28,11 @@
     cursor: pointer;
     transition: opacity .3s ease;
     position: absolute;
+    display: none;
+}
+
+.card__trash_enabled {
+    display: block;
 }
 
 .card__trash:hover{

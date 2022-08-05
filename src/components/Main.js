@@ -2,41 +2,21 @@ import React from 'react';
 import Card from "./Card";
 import editAvatarButton from '../images/edit_profile_image.svg';
 import {api} from '../utils/api';
+import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 
 function Main({
+    cards,
     onEditProfileClick,
     onAddPlaceClick,
     onEditAvatarClick,
     onDeleteCardClick,
     onCardImageClick,
+    onCardLikeClick,
 }) {
-    const [userName, setUserName] = React.useState("");
-    const [userDesciption, setUserDesciption] = React.useState("");
-    const [userAvatar, setUserAvatar] = React.useState("");
-    const [cards, setCards] = React.useState([]);
+    const currentUser = React.useContext(CurrentUserContext);
 
-    React.useEffect(() => {
-        api.getUser()
-        .then((userData) =>{
-            setUserName(userData.name);
-            setUserDesciption(userData.about);
-            setUserAvatar(userData.avatar);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-
-        api.getInitialCards()
-        .then((cardData) => {
-            setCards(cardData);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    }, []);
-
-    const imageStyle = {backgroundImage: `url(${userAvatar})`};
+    const imageStyle = {backgroundImage: `url(${currentUser.avatar})`};
 
     return (
         <main className="page__content">
@@ -52,9 +32,9 @@ function Main({
                     </div>
                 </div>
                 <div className="profile__info">
-                    <h1 className="profile__info-title">{userName}</h1>
+                    <h1 className="profile__info-title">{currentUser.name}</h1>
                     <button className="profile__info-button" type="button" onClick={onEditProfileClick}></button>
-                    <p className="profile__info-subtitle">{userDesciption}</p>
+                    <p className="profile__info-subtitle">{currentUser.about}</p>
                 </div>
                 <button className="profile__button" type="button" onClick={onAddPlaceClick}></button>
             </section>
@@ -63,7 +43,8 @@ function Main({
                 {cards.map((card, i) => 
                 <Card key={i} card={card} 
                 onCardClick={onCardImageClick}
-                onDeleteClick={onDeleteCardClick} />
+                onDeleteClick={onDeleteCardClick}
+                onCardLike={onCardLikeClick} />
                 )}
             </section>
         </main>
