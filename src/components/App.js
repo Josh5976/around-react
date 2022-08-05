@@ -1,15 +1,15 @@
 import React from 'react';
-import '../pages/index.css';
+import '../index.css';
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import ImagePopup from "./ImagePopup";
-import PopupWithForm from "./PopupWithForm";
+// import PopupWithForm from "./PopupWithForm";
 import EditAvatarPopup from './EditAvatarPopup';
 import EditProfilePopup from './EditProfilePopup';
 import AddPlacePopup from './AddPlacePopup';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
-import { api } from '../utils/api';
+import  { api } from '../utils/api';
 
 
 function App() {
